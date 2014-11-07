@@ -22,7 +22,7 @@ public class CustomerActionBarActivity extends Activity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.customer_action_bar_activity);
 
 		actionBar = getActionBar();
 		
@@ -46,7 +46,7 @@ public class CustomerActionBarActivity extends Activity implements
 //		actionBarTitleTextView.setText("Drawer Menu");
 
 		
-		searchTextView = (TextView) findViewById(R.id.showSearchTextView);
+		searchTextView = (TextView) findViewById(R.id.customer_action_bar_showSearchTextView);
 
 	}
 
