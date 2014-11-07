@@ -60,21 +60,16 @@ public class DrawerDemoActivity extends FragmentActivity implements OnItemClickL
 		leftDrawerMenuListView.setOnItemClickListener(this);
 
 		mainDrawerLayout = (DrawerLayout) findViewById(R.id.main_drawerLayout);
-		mainDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
-				GravityCompat.START);
+//		mainDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
+//				GravityCompat.START);
 
-		actionBarDrawerToggle = new ActionBarDrawerToggle(this, /* host Activity */
-		mainDrawerLayout, /* DrawerLayout object */
-		R.drawable.ic_drawer, /* nav drawer image to replace 'Up' caret */
-		R.string.main_drawer_open, /*
-									 * "open drawer" description for
-									 * accessibility
-									 */
-		R.string.main_drawer_close /*
-									 * "close drawer" description for
-									 * accessibility
-									 */
-		) {
+		actionBarDrawerToggle = new ActionBarDrawerToggle(
+				this, 						/* host Activity */
+				mainDrawerLayout, 			/* DrawerLayout object */
+				R.drawable.ic_drawer, 		/* nav drawer image to replace 'Up' caret */
+				R.string.main_drawer_open, 	/* "open drawer" description for accessibility */
+				R.string.main_drawer_close 	/* "close drawer" description for accessibility*/
+				) {
 
 			public void onDrawerOpened(View drawerView) {
 				super.onDrawerOpened(drawerView);
