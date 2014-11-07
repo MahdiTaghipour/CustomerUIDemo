@@ -52,7 +52,11 @@
             android:name=".activity.ExpandableListviewDemo.ExpandableListviewDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
+         <activity
+            android:name=".activity.ViewHolderDemo.ViewHolderDemoActvity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
+         
     </application>
 
 </manifest>

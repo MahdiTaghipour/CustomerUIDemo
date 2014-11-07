@@ -39,10 +39,18 @@
         android:text="Drawer Demo" />
 
     <Button
-        android:id="@+id/main_expandableListviewDemoButton"
+        android:id="@+id/main_viewHolderDemoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/main_drawerDemoButton"
+        android:layout_marginTop="5dp"
+        android:text="View Holder Demo" />
+
+    <Button
+        android:id="@+id/main_expandableListviewDemoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_viewHolderDemoButton"
         android:layout_marginTop="5dp"
         android:text="Expandable Listview Demo" />
 
