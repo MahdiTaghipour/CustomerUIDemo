@@ -48,6 +48,10 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:theme="@style/Theme.Customer"/>
         
+         <activity
+            android:name=".activity.ExpandableListviewDemo.ExpandableListviewDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+        
         
     </application>
 
