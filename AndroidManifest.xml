@@ -56,6 +56,11 @@
             android:name=".activity.ViewHolderDemo.ViewHolderDemoActvity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
+         <activity
+            android:name=".activity.CustomerActionBar.CustomerActionBarActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/Theme.Customer"/>
+        
          
     </application>
 

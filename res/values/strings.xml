@@ -7,8 +7,20 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
-    
+    <!-- Drawer Demo  -->
     <string name="main_drawer_open">Open navigation drawer</string>
     <string name="main_drawer_close">Close navigation drawer</string>
 
+    <!-- Customer Action Bar Demo -->
+    <string name="menu_searchTitle">Search</string>
+    <string name="menu_cartTitle">Cart</string>
+    <string name="menu_moreTitle">More</string>
+    <string name="menu_homeTitle">Home</string>
+    <string name="menu_myAccountTitle">My Account</string>
+    <string name="menu_recentHistoryTitle">Recent History</string>
+    <string name="menu_wishListTitle">Wish List</string>
+    <string name="menu_informationTitle">Information</string>
+    <string name="menu_searchGoogleTvTitle">Search Google TV</string>
+    
+    
 </resources>
