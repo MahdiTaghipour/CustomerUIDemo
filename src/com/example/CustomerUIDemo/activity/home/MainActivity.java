@@ -6,6 +6,7 @@ import com.example.CustomerUIDemo.activity.AlertDialogDemo.AlertDialogDemoActivi
 import com.example.CustomerUIDemo.activity.CustomerActionBar.CustomerActionBarActivity;
 import com.example.CustomerUIDemo.activity.DrawerDemo.DrawerDemoActivity;
 import com.example.CustomerUIDemo.activity.ExpandableListviewDemo.ExpandableListviewDemoActivity;
+import com.example.CustomerUIDemo.activity.PopupWindowDemo.PopupWindowDemoActivity;
 import com.example.CustomerUIDemo.activity.TabHost.TabHostDemoActivity;
 import com.example.CustomerUIDemo.activity.TextviewEditTextDemo.TextViewAndEditViewDemoActivity;
 import com.example.CustomerUIDemo.activity.ViewHolderDemo.ViewHolderDemoActvity;
@@ -26,6 +27,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button expandableListviewDemoButton;
 	private Button customerActionBarDemoButton;
 	private Button alertDialogDemoButton;
+	private Button popupWindowDemoButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,10 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		alertDialogDemoButton = (Button) findViewById(R.id.main_alertDialogDemoButton);
 		alertDialogDemoButton.setOnClickListener(this);
+		
+		popupWindowDemoButton = (Button) findViewById(R.id.main_popupWindowDemoButton);
+		popupWindowDemoButton.setOnClickListener(this);
+		
 		
 		
 	}
@@ -103,6 +109,13 @@ public class MainActivity extends Activity implements OnClickListener{
 			startActivity(intent);
 			
 			break;
+			
+		case R.id.main_popupWindowDemoButton:
+			intent.setClass(this, PopupWindowDemoActivity.class);
+			startActivity(intent);
+			
+			break;
+			
 						
 		default:
 			break;

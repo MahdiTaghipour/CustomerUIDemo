@@ -65,6 +65,10 @@
             android:name=".activity.AlertDialogDemo.AlertDialogDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
+         <activity
+            android:name=".activity.PopupWindowDemo.PopupWindowDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+        
          
     </application>
 
