@@ -6,8 +6,8 @@
     <string name="sqlite_version">1</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
-    <!-- Drawer Demo  -->
+
+    <!-- Drawer Demo -->
     <string name="main_drawer_open">Open navigation drawer</string>
     <string name="main_drawer_close">Close navigation drawer</string>
 
@@ -22,5 +22,46 @@
     <string name="menu_informationTitle">Information</string>
     <string name="menu_searchGoogleTvTitle">Search Google TV</string>
     
+    <!-- Alert Dialog Demo -->
+    <string name="alertDialogDemo_email">Email:</string>
+	<string name="alertDialogDemo_password">Password:</string>
     
+    <string name="alertDialogDemo_standardAlertDialogDemoMessage">
+        Plloaso mako nuto siwuf cakso dodtos anr koop a
+        cupy uf cak vux noaw yerw phuno. Whag schengos, uf efed, quiel
+        ba mada su otrenzr.\n\nSwipontgwook proudgs hus yag su ba dagarmidad.
+        Plasa maku noga wipont trenzsa schengos ent kaap zux comy.\n\nWipont trenz
+        kipg naar mixent phona. Cak pwico siructiun
+        ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n
+        Plloaso mako nuto siwuf cakso dodtos anr koop a
+        cupy uf cak vux noaw yerw phuno. Whag schengos, uf efed, quiel
+        ba mada su otrenzr.\n\nSwipontgwook proudgs hus yag su ba dagarmidad.
+        Plasa maku noga wipont trenzsa schengos ent kaap zux comy.\n\nWipont trenz
+        kipg naar mixent phona. Cak pwico siructiun
+        ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n
+        Plloaso mako nuto siwuf cakso dodtos anr koop a
+        cupy uf cak vux noaw yerw phuno. Whag schengos, uf efed, quiel
+        ba mada su otrenzr.\n\nSwipontgwook proudgs hus yag su ba dagarmidad.
+        Plasa maku noga wipont trenzsa schengos ent kaap zux comy.\n\nWipont trenz
+        kipg naar mixent phona. Cak pwico siructiun
+        ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n
+        Plloaso mako nuto siwuf cakso dodtos anr koop a
+        cupy uf cak vux noaw yerw phuno. Whag schengos, uf efed, quiel
+        ba mada su otrenzr.\n\nSwipontgwook proudgs hus yag su ba dagarmidad.
+        Plasa maku noga wipont trenzsa schengos ent kaap zux comy.\n\nWipont trenz
+        kipg naar mixent phona. Cak pwico siructiun
+        ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n
+        Plloaso mako nuto siwuf cakso dodtos anr koop a
+        cupy uf cak vux noaw yerw phuno. Whag schengos, uf efed, quiel
+        ba mada su otrenzr.\n\nSwipontgwook proudgs hus yag su ba dagarmidad.
+        Plasa maku noga wipont trenzsa schengos ent kaap zux comy.\n\nWipont trenz
+        kipg naar mixent phona. Cak pwico siructiun
+        ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n
+        Plloaso mako nuto siwuf cakso dodtos anr koop a
+        cupy uf cak vux noaw yerw phuno. Whag schengos, uf efed, quiel
+        ba mada su otrenzr.\n\nSwipontgwook proudgs hus yag su ba dagarmidad.
+        Plasa maku noga wipont trenzsa schengos ent kaap zux comy.\n\nWipont trenz
+        kipg naar mixent phona. Cak pwico siructiun
+        ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n</string>
+
 </resources>

@@ -2,6 +2,7 @@ package com.example.CustomerUIDemo.activity.home;
 
 
 import com.example.CustomerUIDemo.R;
+import com.example.CustomerUIDemo.activity.AlertDialogDemo.AlertDialogDemoActivity;
 import com.example.CustomerUIDemo.activity.CustomerActionBar.CustomerActionBarActivity;
 import com.example.CustomerUIDemo.activity.DrawerDemo.DrawerDemoActivity;
 import com.example.CustomerUIDemo.activity.ExpandableListviewDemo.ExpandableListviewDemoActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button viewHolderDemoButton;
 	private Button expandableListviewDemoButton;
 	private Button customerActionBarDemoButton;
+	private Button alertDialogDemoButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		customerActionBarDemoButton = (Button) findViewById(R.id.main_customerActionBarDemoButton);
 		customerActionBarDemoButton.setOnClickListener(this);
 		
+		alertDialogDemoButton = (Button) findViewById(R.id.main_alertDialogDemoButton);
+		alertDialogDemoButton.setOnClickListener(this);
 		
 		
 	}
@@ -90,6 +94,12 @@ public class MainActivity extends Activity implements OnClickListener{
 						
 		case R.id.main_customerActionBarDemoButton:
 			intent.setClass(this, CustomerActionBarActivity.class);
+			startActivity(intent);
+			
+			break;
+						
+		case R.id.main_alertDialogDemoButton:
+			intent.setClass(this, AlertDialogDemoActivity.class);
 			startActivity(intent);
 			
 			break;

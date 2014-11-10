@@ -61,6 +61,10 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:theme="@style/Theme.Customer"/>
         
+         <activity
+            android:name=".activity.AlertDialogDemo.AlertDialogDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+        
          
     </application>
 
