@@ -6,6 +6,7 @@ import com.example.CustomerUIDemo.activity.AlertDialogDemo.AlertDialogDemoActivi
 import com.example.CustomerUIDemo.activity.CustomerActionBar.CustomerActionBarActivity;
 import com.example.CustomerUIDemo.activity.DrawerDemo.DrawerDemoActivity;
 import com.example.CustomerUIDemo.activity.ExpandableListviewDemo.ExpandableListviewDemoActivity;
+import com.example.CustomerUIDemo.activity.ImageViewDemo.ImageViewDemoActivity;
 import com.example.CustomerUIDemo.activity.PopupWindowDemo.PopupWindowDemoActivity;
 import com.example.CustomerUIDemo.activity.SendNotificationDemo.SendNotificationDemoActivity;
 import com.example.CustomerUIDemo.activity.TabHost.TabHostDemoActivity;
@@ -22,6 +23,7 @@ import android.widget.Button;
 public class MainActivity extends Activity implements OnClickListener{
 	
 	private Button textviewAndEditTextDemoButton;
+	private Button imageViewDemoButton;
 	private Button tabhostDemoButton;
 	private Button drawerDemoButton;
 	private Button viewHolderDemoButton;
@@ -38,6 +40,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		textviewAndEditTextDemoButton = (Button) findViewById(R.id.main_textviewAndEditTextDemoButton);
 		textviewAndEditTextDemoButton.setOnClickListener(this);
+		
+		imageViewDemoButton = (Button) findViewById(R.id.main_imageViewDemoButton);
+		imageViewDemoButton.setOnClickListener(this);
 		
 		tabhostDemoButton = (Button) findViewById(R.id.main_tabhostDemoButton);
 		tabhostDemoButton.setOnClickListener(this);
@@ -77,6 +82,12 @@ public class MainActivity extends Activity implements OnClickListener{
 
 			break;
 
+		case R.id.main_imageViewDemoButton:
+			intent.setClass(this, ImageViewDemoActivity.class);
+			startActivity(intent);
+
+			break;
+			
 		case R.id.main_tabhostDemoButton:
 			intent.setClass(this, TabHostDemoActivity.class);
 			startActivity(intent);

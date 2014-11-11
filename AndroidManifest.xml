@@ -32,6 +32,9 @@
             android:name=".activity.TextviewEditTextDemo.TextViewAndEditViewDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
+        <activity
+            android:name=".activity.ImageViewDemo.ImageViewDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
         <activity
             android:name=".activity.TextviewEditTextDemo.ChartletActivity"

@@ -19,10 +19,18 @@
             android:text="TextView and EditText Demo" />
 
         <Button
-            android:id="@+id/main_tabhostDemoButton"
+            android:id="@+id/main_imageViewDemoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/main_textviewAndEditTextDemoButton"
+            android:layout_marginTop="5dp"
+            android:text="ImageView Demo" />
+        
+        <Button
+            android:id="@+id/main_tabhostDemoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_imageViewDemoButton"
             android:layout_marginTop="5dp"
             android:text="Tabhost Demo" />
 
