@@ -4,6 +4,9 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    
+	<uses-permission android:name="android.permission.VIBRATE"/>    
+    
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="14" />
@@ -69,7 +72,31 @@
             android:name=".activity.PopupWindowDemo.PopupWindowDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
+         <activity
+            android:name=".activity.SendNotificationDemo.SendNotificationDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
          
-    </application>
+         <activity
+            android:name=".activity.SendNotificationDemo.NotificationResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize" >
+            
+            <!-- When open the notification and press back button, the screen will return to which page  -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SendNotificationDemo.SendNotificationDemoActivity" />
+        </activity>
+        
+        <activity
+            android:name=".activity.SendNotificationDemo.SpecialNotificationResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SendNotificationDemo.SendNotificationDemoActivity" />
+        </activity>
+        
+</application>
 
 </manifest>
