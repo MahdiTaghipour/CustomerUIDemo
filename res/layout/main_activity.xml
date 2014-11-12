@@ -90,6 +90,15 @@
             android:layout_marginTop="5dp"
             android:text="Send Notification Demo" />
         
+        <Button
+            android:id="@+id/main_webViewDemoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_sendNotificationDemoButton"
+            android:layout_marginTop="5dp"
+            android:text="Webview Demo" />
+        
+        
     </RelativeLayout>
 
 </ScrollView>

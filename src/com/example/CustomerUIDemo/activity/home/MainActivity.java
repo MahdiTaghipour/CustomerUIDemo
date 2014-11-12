@@ -12,6 +12,7 @@ import com.example.CustomerUIDemo.activity.SendNotificationDemo.SendNotification
 import com.example.CustomerUIDemo.activity.TabHost.TabHostDemoActivity;
 import com.example.CustomerUIDemo.activity.TextviewEditTextDemo.TextViewAndEditViewDemoActivity;
 import com.example.CustomerUIDemo.activity.ViewHolderDemo.ViewHolderDemoActvity;
+import com.example.CustomerUIDemo.activity.WebViewDemo.WebViewDemoActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -32,6 +33,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button alertDialogDemoButton;
 	private Button popupWindowDemoButton;
 	private Button sendNotificationDemoButton;
+	private Button webViewDemoButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -68,77 +70,68 @@ public class MainActivity extends Activity implements OnClickListener{
 		sendNotificationDemoButton = (Button) findViewById(R.id.main_sendNotificationDemoButton);
 		sendNotificationDemoButton.setOnClickListener(this);
 		
+		webViewDemoButton = (Button) findViewById(R.id.main_webViewDemoButton);
+		webViewDemoButton.setOnClickListener(this);
+		
 	}
 
 	
 	@Override
 	public void onClick(View view) {
+		
 		 Intent intent = new Intent();
 
 		switch (view.getId()) {
 		case R.id.main_textviewAndEditTextDemoButton:
 			intent.setClass(this, TextViewAndEditViewDemoActivity.class);
-			startActivity(intent);
-
 			break;
 
 		case R.id.main_imageViewDemoButton:
 			intent.setClass(this, ImageViewDemoActivity.class);
-			startActivity(intent);
-
 			break;
 			
 		case R.id.main_tabhostDemoButton:
 			intent.setClass(this, TabHostDemoActivity.class);
-			startActivity(intent);
-			
 			break;
 						
 		case R.id.main_drawerDemoButton:
 			intent.setClass(this, DrawerDemoActivity.class);
-			startActivity(intent);
-			
 			break;
 						
 		case R.id.main_expandableListviewDemoButton:
 			intent.setClass(this, ExpandableListviewDemoActivity.class);
-			startActivity(intent);
-			
 			break;
 						
 		case R.id.main_viewHolderDemoButton:
 			intent.setClass(this, ViewHolderDemoActvity.class);
-			startActivity(intent);
-			
 			break;
 						
 		case R.id.main_customerActionBarDemoButton:
 			intent.setClass(this, CustomerActionBarActivity.class);
-			startActivity(intent);
-			
 			break;
 						
 		case R.id.main_alertDialogDemoButton:
 			intent.setClass(this, AlertDialogDemoActivity.class);
-			startActivity(intent);
-			
 			break;
 			
 		case R.id.main_popupWindowDemoButton:
 			intent.setClass(this, PopupWindowDemoActivity.class);
-			startActivity(intent);
-			
 			break;
 			
 		case R.id.main_sendNotificationDemoButton:
 			intent.setClass(this, SendNotificationDemoActivity.class);
-			startActivity(intent);
+			break;
 			
+		case R.id.main_webViewDemoButton:
+			intent.setClass(this, WebViewDemoActivity.class);
 			break;
 			
 		default:
 			break;
 		}
+		
+		startActivity(intent);
+
 	}
 
 }
