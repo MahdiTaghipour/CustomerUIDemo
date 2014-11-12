@@ -105,6 +105,10 @@
             android:name=".activity.WebViewDemo.WebViewDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
          
+         <activity
+            android:name=".activity.AnimationDemo.AnmationDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
 </application>
 
 </manifest>

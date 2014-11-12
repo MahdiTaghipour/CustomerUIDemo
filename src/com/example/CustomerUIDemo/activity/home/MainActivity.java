@@ -3,6 +3,7 @@ package com.example.CustomerUIDemo.activity.home;
 
 import com.example.CustomerUIDemo.R;
 import com.example.CustomerUIDemo.activity.AlertDialogDemo.AlertDialogDemoActivity;
+import com.example.CustomerUIDemo.activity.AnimationDemo.AnmationDemoActivity;
 import com.example.CustomerUIDemo.activity.CustomerActionBar.CustomerActionBarActivity;
 import com.example.CustomerUIDemo.activity.DrawerDemo.DrawerDemoActivity;
 import com.example.CustomerUIDemo.activity.ExpandableListviewDemo.ExpandableListviewDemoActivity;
@@ -34,6 +35,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button popupWindowDemoButton;
 	private Button sendNotificationDemoButton;
 	private Button webViewDemoButton;
+	private Button animationDemoButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		webViewDemoButton = (Button) findViewById(R.id.main_webViewDemoButton);
 		webViewDemoButton.setOnClickListener(this);
+		
+		animationDemoButton = (Button) findViewById(R.id.main_animationDemoButton);
+		animationDemoButton.setOnClickListener(this);
 		
 	}
 
@@ -124,6 +129,10 @@ public class MainActivity extends Activity implements OnClickListener{
 			
 		case R.id.main_webViewDemoButton:
 			intent.setClass(this, WebViewDemoActivity.class);
+			break;
+			
+		case R.id.main_animationDemoButton:
+			intent.setClass(this, AnmationDemoActivity.class);
 			break;
 			
 		default:
