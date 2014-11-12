@@ -33,7 +33,7 @@ public class AlertDialogDemoActivity extends Activity implements OnClickListener
 		standardAlertDialogDemoButton = (Button) findViewById(R.id.alertDialog_standardAlertDialogDemoButton);
 		standardAlertDialogDemoButton.setOnClickListener(this);
 		
-		customerAlertDialogDemoButton = (Button) findViewById(R.id.alertDialog_customerAlertDialogDemoButton);
+		customerAlertDialogDemoButton = (Button) findViewById(R.id.alertControllerDemo_repeatAlertButton);
 		customerAlertDialogDemoButton.setOnClickListener(this);
 		
 		listAlertDialogDemoButton = (Button) findViewById(R.id.alertDialog_listAlertDialogDemoButton);
@@ -247,7 +247,7 @@ public class AlertDialogDemoActivity extends Activity implements OnClickListener
 			onStandardAlertDialogClick();
 			break;
 
-		case R.id.alertDialog_customerAlertDialogDemoButton:
+		case R.id.alertControllerDemo_repeatAlertButton:
 			onCustomerAlertDialogClick();
 			break;
 
