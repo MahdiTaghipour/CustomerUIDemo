@@ -4,6 +4,7 @@ import com.example.CustomerUIDemo.R;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AccelerateInterpolator;
@@ -46,8 +47,27 @@ public class AnmationDemoActivity extends Activity implements OnClickListener{
 	}
 
 	private void onRotateImageLayoutClick(){
-		applyRotation(0, 180);
+		MainCountDown countdown = new MainCountDown(3000, 3000);
+		countdown.start();
 	}
+	
+	public class MainCountDown extends CountDownTimer {
+
+		public MainCountDown(long millisInFuture, long countDownInterval) {
+			super(millisInFuture, countDownInterval);
+		}
+
+		@Override
+		public void onTick(long millisUntilFinished) {
+		}
+
+		@Override
+		public void onFinish() {
+			applyRotation(0, 180);
+		}
+
+	}
+	
 	
 	private void applyRotation(float start, float end) {
 		final float centerX = relativeLayout.getWidth() / 2.0f;
