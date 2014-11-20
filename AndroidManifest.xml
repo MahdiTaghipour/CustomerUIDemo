@@ -109,6 +109,26 @@
             android:name=".activity.AnimationDemo.AnmationDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
          
-</application>
+         <activity
+            android:name=".activity.MenuAndActionBarDemo.MenuAndActionBarDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
+         <activity
+            android:name=".activity.MenuAndActionBarDemo.ActionBarDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
+         <activity
+            android:name=".activity.MenuAndActionBarDemo.FloatContextMenuDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
+         <activity
+            android:name=".activity.MenuAndActionBarDemo.IndividualViewActionModeDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
+         <activity
+            android:name=".activity.MenuAndActionBarDemo.ListViewActionModeDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
+	</application>
 
 </manifest>

@@ -8,6 +8,7 @@ import com.example.CustomerUIDemo.activity.CustomerActionBar.CustomerActionBarAc
 import com.example.CustomerUIDemo.activity.DrawerDemo.DrawerDemoActivity;
 import com.example.CustomerUIDemo.activity.ExpandableListviewDemo.ExpandableListviewDemoActivity;
 import com.example.CustomerUIDemo.activity.ImageViewDemo.ImageViewDemoActivity;
+import com.example.CustomerUIDemo.activity.MenuAndActionBarDemo.MenuAndActionBarDemoActivity;
 import com.example.CustomerUIDemo.activity.PopupWindowDemo.PopupWindowDemoActivity;
 import com.example.CustomerUIDemo.activity.SendNotificationDemo.SendNotificationDemoActivity;
 import com.example.CustomerUIDemo.activity.TabHost.TabHostDemoActivity;
@@ -36,6 +37,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button sendNotificationDemoButton;
 	private Button webViewDemoButton;
 	private Button animationDemoButton;
+	private Button menuAndActionBarDemoButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -78,13 +80,16 @@ public class MainActivity extends Activity implements OnClickListener{
 		animationDemoButton = (Button) findViewById(R.id.main_animationDemoButton);
 		animationDemoButton.setOnClickListener(this);
 		
+		menuAndActionBarDemoButton = (Button) findViewById(R.id.main_menuAndActionBarDemoButton);
+		menuAndActionBarDemoButton.setOnClickListener(this);
+		
 	}
 
 	
 	@Override
 	public void onClick(View view) {
 		
-		 Intent intent = new Intent();
+		Intent intent = new Intent();
 
 		switch (view.getId()) {
 		case R.id.main_textviewAndEditTextDemoButton:
@@ -134,7 +139,11 @@ public class MainActivity extends Activity implements OnClickListener{
 		case R.id.main_animationDemoButton:
 			intent.setClass(this, AnmationDemoActivity.class);
 			break;
-			
+	
+		case R.id.main_menuAndActionBarDemoButton:
+			intent.setClass(this, MenuAndActionBarDemoActivity.class);
+			break;
+	
 		default:
 			break;
 		}
