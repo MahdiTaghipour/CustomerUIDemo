@@ -4,10 +4,10 @@ package com.example.CustomerUIDemo.activity.home;
 import com.example.CustomerUIDemo.R;
 import com.example.CustomerUIDemo.activity.AlertDialogDemo.AlertDialogDemoActivity;
 import com.example.CustomerUIDemo.activity.AnimationDemo.AnmationDemoActivity;
-import com.example.CustomerUIDemo.activity.CustomerActionBar.CustomerActionBarActivity;
 import com.example.CustomerUIDemo.activity.DrawerDemo.DrawerDemoActivity;
 import com.example.CustomerUIDemo.activity.ExpandableListviewDemo.ExpandableListviewDemoActivity;
 import com.example.CustomerUIDemo.activity.ImageViewDemo.ImageViewDemoActivity;
+import com.example.CustomerUIDemo.activity.MenuAndActionBarDemo.CustomerActionBarActivity;
 import com.example.CustomerUIDemo.activity.MenuAndActionBarDemo.MenuAndActionBarDemoActivity;
 import com.example.CustomerUIDemo.activity.PopupWindowDemo.PopupWindowDemoActivity;
 import com.example.CustomerUIDemo.activity.SendNotificationDemo.SendNotificationDemoActivity;
@@ -31,13 +31,12 @@ public class MainActivity extends Activity implements OnClickListener{
 	private Button drawerDemoButton;
 	private Button viewHolderDemoButton;
 	private Button expandableListviewDemoButton;
-	private Button customerActionBarDemoButton;
+	private Button menuAndActionBarDemoButton;
 	private Button alertDialogDemoButton;
 	private Button popupWindowDemoButton;
 	private Button sendNotificationDemoButton;
 	private Button webViewDemoButton;
 	private Button animationDemoButton;
-	private Button menuAndActionBarDemoButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +61,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		expandableListviewDemoButton = (Button) findViewById(R.id.main_expandableListviewDemoButton);
 		expandableListviewDemoButton.setOnClickListener(this);
 		
-		customerActionBarDemoButton = (Button) findViewById(R.id.main_customerActionBarDemoButton);
-		customerActionBarDemoButton.setOnClickListener(this);
+		menuAndActionBarDemoButton = (Button) findViewById(R.id.main_menuAndActionBarDemoButton);
+		menuAndActionBarDemoButton.setOnClickListener(this);
 		
 		alertDialogDemoButton = (Button) findViewById(R.id.main_alertDialogDemoButton);
 		alertDialogDemoButton.setOnClickListener(this);
@@ -79,9 +78,6 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		animationDemoButton = (Button) findViewById(R.id.main_animationDemoButton);
 		animationDemoButton.setOnClickListener(this);
-		
-		menuAndActionBarDemoButton = (Button) findViewById(R.id.main_menuAndActionBarDemoButton);
-		menuAndActionBarDemoButton.setOnClickListener(this);
 		
 	}
 
@@ -116,10 +112,10 @@ public class MainActivity extends Activity implements OnClickListener{
 			intent.setClass(this, ViewHolderDemoActvity.class);
 			break;
 						
-		case R.id.main_customerActionBarDemoButton:
-			intent.setClass(this, CustomerActionBarActivity.class);
+		case R.id.main_menuAndActionBarDemoButton:
+			intent.setClass(this, MenuAndActionBarDemoActivity.class);
 			break;
-						
+			
 		case R.id.main_alertDialogDemoButton:
 			intent.setClass(this, AlertDialogDemoActivity.class);
 			break;
@@ -138,10 +134,6 @@ public class MainActivity extends Activity implements OnClickListener{
 			
 		case R.id.main_animationDemoButton:
 			intent.setClass(this, AnmationDemoActivity.class);
-			break;
-	
-		case R.id.main_menuAndActionBarDemoButton:
-			intent.setClass(this, MenuAndActionBarDemoActivity.class);
 			break;
 	
 		default:

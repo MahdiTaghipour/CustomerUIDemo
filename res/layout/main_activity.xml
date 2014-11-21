@@ -59,18 +59,18 @@
             android:text="Expandable Listview Demo" />
 
         <Button
-            android:id="@+id/main_customerActionBarDemoButton"
+            android:id="@+id/main_menuAndActionBarDemoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/main_expandableListviewDemoButton"
             android:layout_marginTop="5dp"
-            android:text="Customer Action Bar Demo" />
+            android:text="Menu And Action Bar Demo" />
 
         <Button
             android:id="@+id/main_alertDialogDemoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/main_customerActionBarDemoButton"
+            android:layout_below="@+id/main_menuAndActionBarDemoButton"
             android:layout_marginTop="5dp"
             android:text="Alert Dialog Demo" />
 
@@ -106,13 +106,6 @@
             android:layout_marginTop="5dp"
             android:text="Animation Demo" />
         
-         <Button
-            android:id="@+id/main_menuAndActionBarDemoButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/main_animationDemoButton"
-            android:layout_marginTop="5dp"
-            android:text="Menu And Action Bar Demo" />
         
          </RelativeLayout>
 

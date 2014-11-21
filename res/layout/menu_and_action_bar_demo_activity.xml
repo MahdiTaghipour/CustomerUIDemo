@@ -15,11 +15,20 @@
         android:text="Action Bar Demo" />
 
     <Button
-        android:id="@+id/menuAndActionBarDemo_floatContextMenuDemoButton"
+        android:id="@+id/menuAndActionBarDemo_customerActionBarDemoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/menuAndActionBarDemo_ActionBarDemoButton"
+        android:text="Customer Action Bar Demo" />
+
+    
+    <Button
+        android:id="@+id/menuAndActionBarDemo_floatContextMenuDemoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/menuAndActionBarDemo_customerActionBarDemoButton"
         android:text="Float Context Menu Demo" />
 
     <Button
@@ -36,6 +45,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/menuAndActionBarDemo_individualViewActionModeDemoButton"
-        android:text="List View Action Mode Demo" />
+        android:text="Listview Action Mode Demo" />
+
+    <Button
+        android:id="@+id/menuAndActionBarDemo_customListviewActionModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/menuAndActionBarDemo_listviewActionModeDemoButton"
+        android:text="Custom Listview Action Mode Demo" />
     
 </RelativeLayout>

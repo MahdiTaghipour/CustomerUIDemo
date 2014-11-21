@@ -64,11 +64,6 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
          <activity
-            android:name=".activity.CustomerActionBar.CustomerActionBarActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
-            android:theme="@style/Theme.Customer"/>
-        
-         <activity
             android:name=".activity.AlertDialogDemo.AlertDialogDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
         
@@ -118,6 +113,11 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
          
          <activity
+            android:name=".activity.MenuAndActionBarDemo.CustomerActionBarActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@style/Theme.Customer"/>
+        
+         <activity
             android:name=".activity.MenuAndActionBarDemo.FloatContextMenuDemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
          
@@ -127,6 +127,10 @@
          
          <activity
             android:name=".activity.MenuAndActionBarDemo.ListViewActionModeDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
+         
+         <activity
+            android:name=".activity.MenuAndActionBarDemo.CustomListViewActionModeActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"/>
          
 	</application>

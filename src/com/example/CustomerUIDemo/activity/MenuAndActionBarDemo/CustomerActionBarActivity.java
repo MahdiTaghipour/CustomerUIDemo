@@ -1,4 +1,4 @@
-package com.example.CustomerUIDemo.activity.CustomerActionBar;
+package com.example.CustomerUIDemo.activity.MenuAndActionBarDemo;
 
 import com.example.CustomerUIDemo.R;
 
@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 import android.widget.TextView;

@@ -8,10 +8,9 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/listViewActionModeDemo_nameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/menuAndActionBarDemo_ActionBarDemoButton"
         android:text="long-click Floating Context Menu Demo Button"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -19,7 +18,7 @@
         android:id="@+id/floatContextMenuDemo_floatingContextMenuDemoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/listViewActionModeDemo_nameTextView"
         android:layout_marginTop="5dp"
         android:text="Floating Context Menu Demo" />
 

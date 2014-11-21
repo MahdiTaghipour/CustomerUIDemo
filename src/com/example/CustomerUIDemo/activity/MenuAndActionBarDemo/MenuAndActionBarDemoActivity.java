@@ -12,9 +12,11 @@ import android.widget.Button;
 public class MenuAndActionBarDemoActivity extends Activity implements OnClickListener{
 	
 	private Button actionBarDemoButton;
+	private Button customerActionBarDemoButton;
 	private Button floatContextMenuDemoButton;
 	private Button individualViewActionModeDemoButton;
 	private Button listviewActionModeDemoButton;
+	private Button customListviewActionModeButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,9 @@ public class MenuAndActionBarDemoActivity extends Activity implements OnClickLis
 		actionBarDemoButton = (Button) findViewById(R.id.menuAndActionBarDemo_ActionBarDemoButton);
 		actionBarDemoButton.setOnClickListener(this);
 		
+		customerActionBarDemoButton = (Button) findViewById(R.id.menuAndActionBarDemo_customerActionBarDemoButton);
+		customerActionBarDemoButton.setOnClickListener(this);
+		
 		floatContextMenuDemoButton = (Button) findViewById(R.id.menuAndActionBarDemo_floatContextMenuDemoButton);
 		floatContextMenuDemoButton.setOnClickListener(this);
 		
@@ -32,6 +37,9 @@ public class MenuAndActionBarDemoActivity extends Activity implements OnClickLis
 		
 		listviewActionModeDemoButton = (Button) findViewById(R.id.menuAndActionBarDemo_listviewActionModeDemoButton);
 		listviewActionModeDemoButton.setOnClickListener(this);
+		
+		customListviewActionModeButton = (Button) findViewById(R.id.menuAndActionBarDemo_customListviewActionModeButton);
+		customListviewActionModeButton.setOnClickListener(this);
 		
 	}
 
@@ -51,6 +59,10 @@ public class MenuAndActionBarDemoActivity extends Activity implements OnClickLis
 			intent.setClass(this, ActionBarDemoActivity.class);
 			break;
 
+		case R.id.menuAndActionBarDemo_customerActionBarDemoButton:
+			intent.setClass(this, CustomerActionBarActivity.class);
+			break;
+			
 		case R.id.menuAndActionBarDemo_floatContextMenuDemoButton:
 			intent.setClass(this, FloatContextMenuDemoActivity.class);
 			break;
@@ -61,6 +73,10 @@ public class MenuAndActionBarDemoActivity extends Activity implements OnClickLis
 			
 		case R.id.menuAndActionBarDemo_listviewActionModeDemoButton:
 			intent.setClass(this, ListViewActionModeDemoActivity.class);
+			break;
+			
+		case R.id.menuAndActionBarDemo_customListviewActionModeButton:
+			intent.setClass(this, CustomListViewActionModeActivity.class);
 			break;
 			
 			

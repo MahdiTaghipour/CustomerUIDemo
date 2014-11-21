@@ -67,4 +67,10 @@
         kipg naar mixent phona. Cak pwico siructiun
         ruous nust apoply tyu cak Uhex sisulutiun munityuw uw dseg\n\n</string>
 
+    
+    <string-array name="itemSelectArray">
+        <item></item>
+        <item>select all</item>
+        <item>unselect all</item>
+        </string-array>
 </resources>
