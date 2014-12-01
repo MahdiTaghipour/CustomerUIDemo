@@ -32,19 +32,23 @@ public class FileUtil {
 	}	
 
 	
-	// Check the file is the image or not. - Sonny Shih 2014/09/26
+	// Check the file is the image or not.
 	public static boolean isImage(String fileName) {
 		boolean isImage = false;
 
+		fileName = fileName.toLowerCase();
+
 		if (fileName.endsWith("jpg")) {
 			isImage = true;
-		} else if (fileName.endsWith("png")) {
+		} else if (fileName.endsWith("jpeg")) {
 			isImage = true;
 		} else if (fileName.endsWith("gif")) {
 			isImage = true;
-		} else if (fileName.endsWith("jpge")) {
+		} else if (fileName.endsWith("png")) {
 			isImage = true;
-		} else if (fileName.endsWith("tif")) {
+		} else if (fileName.endsWith("bmp")) {
+			isImage = true;
+		} else if (fileName.endsWith("webp")) {
 			isImage = true;
 		}
 
@@ -52,28 +56,72 @@ public class FileUtil {
 
 	}
 
-	// Check the file is the media or not
-	public static boolean isMedia(String fileName) {
+	// Check the file is the audio or not
+	public static boolean isAudio(String fileName) {
+		boolean isAudio = false;
+
+		fileName = fileName.toLowerCase();
+
+		if (fileName.endsWith("mp3")) {
+			isAudio = true;
+		} else if (fileName.endsWith("wav")) {
+			isAudio = true;
+		} else if (fileName.endsWith("m4a")) {
+			isAudio = true;
+		} else if (fileName.endsWith("flac")) {
+			isAudio = true;
+		} else if (fileName.endsWith("mid")) {
+			isAudio = true;
+		} else if (fileName.endsWith("xmf")) {
+			isAudio = true;
+		} else if (fileName.endsWith("mxmf")) {
+			isAudio = true;
+		} else if (fileName.endsWith("rtttl")) {
+			isAudio = true;
+		} else if (fileName.endsWith("rtx")) {
+			isAudio = true;
+		} else if (fileName.endsWith("ota")) {
+			isAudio = true;
+		} else if (fileName.endsWith("imy")) {
+			isAudio = true;
+		} else if (fileName.endsWith("ogg")) {
+			isAudio = true;
+		} else if (fileName.endsWith("mkv")) {
+			isAudio = true;
+		}
+
+		return isAudio;
+	}
+
+	// Check the file is the video or not
+	public static boolean isVideo(String fileName) {
 		boolean isMedia = false;
 
-		if (fileName.endsWith("mov")) {
-			isMedia = true;
-		} else if (fileName.endsWith("wav")) {
-			isMedia = true;
-		} else if (fileName.endsWith("mp3")) {
-			isMedia = true;
-		} else if (fileName.endsWith("aac")) {
-			isMedia = true;
-		} else if (fileName.endsWith("m4a")) {
+		fileName = fileName.toLowerCase();
+
+		if (fileName.endsWith("3gp")) {
 			isMedia = true;
 		} else if (fileName.endsWith("mp4")) {
 			isMedia = true;
-		} else if (fileName.endsWith("3gp")) {
+		} else if (fileName.endsWith("avi")) {
+			isMedia = true;
+		} else if (fileName.endsWith("rm")) {
+			isMedia = true;
+		}  else if (fileName.endsWith("rmvb")) {
+			isMedia = true;
+		} else if (fileName.endsWith("mpeg")) {
+			isMedia = true;
+		} else if (fileName.endsWith("mov")) {
+			isMedia = true;
+		} else if (fileName.endsWith("ts")) {
+			isMedia = true;
+		} else if (fileName.endsWith("aac")) {
+			isMedia = true;
+		} else if (fileName.endsWith("mkv")) {
 			isMedia = true;
 		}
 
 		return isMedia;
-
 	}
-
+	
 }
