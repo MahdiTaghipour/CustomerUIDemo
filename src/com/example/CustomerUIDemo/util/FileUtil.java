@@ -33,21 +33,47 @@ public class FileUtil {
 
 	
 	// Check the file is the image or not. - Sonny Shih 2014/09/26
-	public static boolean isImage(String fileName){
+	public static boolean isImage(String fileName) {
 		boolean isImage = false;
-		
+
 		if (fileName.endsWith("jpg")) {
 			isImage = true;
-		} else if(fileName.endsWith("png")){
+		} else if (fileName.endsWith("png")) {
 			isImage = true;
-		} else if(fileName.endsWith("gif")){
+		} else if (fileName.endsWith("gif")) {
 			isImage = true;
-		} else if(fileName.endsWith("jpge")){
+		} else if (fileName.endsWith("jpge")) {
+			isImage = true;
+		} else if (fileName.endsWith("tif")) {
 			isImage = true;
 		}
-		
+
 		return isImage;
-		
+
+	}
+
+	// Check the file is the media or not
+	public static boolean isMedia(String fileName) {
+		boolean isMedia = false;
+
+		if (fileName.endsWith("mov")) {
+			isMedia = true;
+		} else if (fileName.endsWith("wav")) {
+			isMedia = true;
+		} else if (fileName.endsWith("mp3")) {
+			isMedia = true;
+		} else if (fileName.endsWith("aac")) {
+			isMedia = true;
+		} else if (fileName.endsWith("m4a")) {
+			isMedia = true;
+		} else if (fileName.endsWith("mp4")) {
+			isMedia = true;
+		} else if (fileName.endsWith("3gp")) {
+			isMedia = true;
+		}
+
+		return isMedia;
+
 	}
 
 }
