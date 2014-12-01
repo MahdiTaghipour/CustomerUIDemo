@@ -31,30 +31,6 @@ public class FileUtil {
 		return path;
 	}
 
-	// Check the file is the image or not.
-	public static boolean isImage(String fileName) {
-		boolean isImage = false;
-
-		fileName = fileName.toLowerCase();
-
-		if (fileName.endsWith("jpg")) {
-			isImage = true;
-		} else if (fileName.endsWith("jpeg")) {
-			isImage = true;
-		} else if (fileName.endsWith("gif")) {
-			isImage = true;
-		} else if (fileName.endsWith("png")) {
-			isImage = true;
-		} else if (fileName.endsWith("bmp")) {
-			isImage = true;
-		} else if (fileName.endsWith("webp")) {
-			isImage = true;
-		}
-
-		return isImage;
-
-	}
-
 	// Check the file is the audio or not
 	public static boolean isAudio(String fileName) {
 		boolean isAudio = false;
@@ -85,11 +61,33 @@ public class FileUtil {
 			isAudio = true;
 		} else if (fileName.endsWith("ogg")) {
 			isAudio = true;
-		} else if (fileName.endsWith("mkv")) {
-			isAudio = true;
 		}
 
 		return isAudio;
+	}
+	
+	// Check the file is the image or not.
+	public static boolean isImage(String fileName) {
+		boolean isImage = false;
+
+		fileName = fileName.toLowerCase();
+
+		if (fileName.endsWith("jpg")) {
+			isImage = true;
+		} else if (fileName.endsWith("jpeg")) {
+			isImage = true;
+		} else if (fileName.endsWith("gif")) {
+			isImage = true;
+		} else if (fileName.endsWith("png")) {
+			isImage = true;
+		} else if (fileName.endsWith("bmp")) {
+			isImage = true;
+		} else if (fileName.endsWith("webp")) {
+			isImage = true;
+		}
+
+		return isImage;
+
 	}
 
 	// Check the file is the video or not
