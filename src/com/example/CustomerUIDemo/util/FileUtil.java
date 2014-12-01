@@ -29,9 +29,8 @@ public class FileUtil {
 		}
 
 		return path;
-	}	
+	}
 
-	
 	// Check the file is the image or not.
 	public static boolean isImage(String fileName) {
 		boolean isImage = false;
@@ -107,9 +106,11 @@ public class FileUtil {
 			isMedia = true;
 		} else if (fileName.endsWith("rm")) {
 			isMedia = true;
-		}  else if (fileName.endsWith("rmvb")) {
+		} else if (fileName.endsWith("rmvb")) {
 			isMedia = true;
 		} else if (fileName.endsWith("mpeg")) {
+			isMedia = true;
+		} else if (fileName.endsWith("mpg")) {
 			isMedia = true;
 		} else if (fileName.endsWith("mov")) {
 			isMedia = true;
@@ -123,5 +124,5 @@ public class FileUtil {
 
 		return isMedia;
 	}
-	
+
 }
