@@ -1,11 +1,17 @@
 package com.example.CustomerUIDemo.util;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import android.os.Environment;
 
 public class FileUtil {
 
 	// Get the storage root path.
-	public String getStorageRootPath() {
+	public static String getStorageRootPath() {
 
 		String sdCardDir = null;
 		String phoneDataDir = null;
@@ -31,6 +37,36 @@ public class FileUtil {
 		return path;
 	}
 
+	public static void outputLog(String log){
+		String rootPath = getStorageRootPath();
+		String tempFolderPath = rootPath + "/temp";
+		
+		File tempFolder = new File (tempFolderPath);
+		
+		if (!tempFolder.exists()) {
+			tempFolder.mkdir();
+		}
+		
+		String output = "output.log";
+		String outputFilePath = tempFolderPath + "/" + output;
+		
+		File outputFile = new File(outputFilePath);
+		if (outputFile.exists()) {
+			outputFile.delete();
+		}
+		
+		try {
+			FileWriter fileWriter = new FileWriter(outputFilePath);
+			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			PrintWriter fileOut = new PrintWriter(bufferedWriter);
+			fileOut.println(log);
+			fileOut.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 	// Check the file is the audio or not
 	public static boolean isAudio(String fileName) {
 		boolean isAudio = false;
